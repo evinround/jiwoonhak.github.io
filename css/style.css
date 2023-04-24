@@ -1,0 +1,185 @@
+@import url('https://fonts.googleapis.com/css2?family=Pathway+Extreme:wght@100&family=Rock+Salt&family=Signika+Negative&display=swap');
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: 'Pathway Extreme', sans-serif;
+}
+
+h1, h2, h3 {
+    font-family: 'Rock Salt', cursive;
+    text-shadow: #FC0 1px 0 10px;
+}
+
+h2, h3{
+
+}
+
+.showcase{
+    position: absolute;
+    right:0;
+    width:  100%;
+    min-height: 100%;
+    padding:100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index:2;
+}
+.showcase header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 40px 100px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 3;
+
+}
+
+.logo{
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+.toggle{
+    position: relative;
+    width: 60px;
+    height:  60px;
+    background: url('/img/icons8-menu-64.png');
+    background-repeat: no-repeat;
+    background-size: 30px;
+    background-position: center;
+    cursor: pointer;
+}
+
+.toggle.active {
+    background: url('img/close.png');
+    background-repeat: no-repeat;
+    background-size: 30px;
+    background-position: center;
+}
+
+.showcase video{
+    position:  absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0.7;
+}
+
+ul{
+    z-index: 10;
+    max-width: 50px;
+    min-width: 40px;
+}
+
+.overlay {
+    position:  absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(to top, #3d0756,rgb(57, 2, 97), rgb(76, 2, 99), rgb(132, 0, 255));
+    mix-blend-mode: overlay;
+    filter: brightness(100%);
+}
+
+.text{
+    position: relative;
+    text-shadow: #FC0 1px 0 10px;
+    font-weight: bold;
+    z-index: 10;
+    padding: 4rem;
+}
+.text h2{
+    font-size: 3em;
+    font-weight: 400;
+    line-height: 1em;
+    text-transform: uppercase;
+    padding-bottom: 18px;
+}
+.text h3{
+    font-size: 1.7em;
+    font-weight: 200;
+    line-height: 1em;
+    text-transform: uppercase;
+    padding-bottom: 5px;
+}
+
+.text p{
+    font-size: 1em;
+    margin: 20px 0;
+    font-weight: 200;
+    max-width: 700px;
+}
+
+.menu{
+    
+}
+
+@media only screen and (max-width:1300px){
+    .text h2{
+        font-size: 2.5em;
+    }
+}
+
+@media only screen and (max-width:1200px){
+    .text h2{
+        font-size: 2.3em;
+    }
+}
+
+@media only screen and (max-width:1100px){
+    .text h2{
+        font-size: 2em;
+    }
+}
+
+@media only screen and (max-width:1000px){
+    .text h2{
+        font-size: 1.8em;
+    }
+    .text h3{
+        font-size: 1em;
+    }
+}
+
+@media only screen and (max-width:920px){
+    .text h2{
+        font-size: 2.0em;
+        line-height: 40px;
+    }
+}
+
+@media only screen and (max-width:870px){
+    .text h2{
+        font-size: 2.0em;
+        line-height: 50px;
+    }
+}
+
+@media only screen and (max-width:650px){
+    .showcase{
+        margin: 0;
+        padding: 0 3rem;
+    }
+
+}
+
+@media only screen and (max-width:400px){
+    .showcase{
+        margin: 0;
+        padding: 0 2rem;
+    }
+
+    .text h2{
+        line-height: 3.0em;
+    }
+
+}
